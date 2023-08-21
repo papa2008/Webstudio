@@ -27,15 +27,15 @@
             <ul class="header-ul1">
               <li class="nav-list-link">
                   <a href="#" class="nav-list-text">Студія</a>
-                  <div class="header-stick"></div>
+                  <!-- <div class="header-stick"></div> -->
               </li>
               <li class="nav-list-link">
                 <a href="index2.html" class="nav-list-text">Портфоліо</a>
-                <div class="header-stick-portfolio"></div>
+                <!-- <div class="header-stick-portfolio"></div> -->
               </li>
               <li class="nav-list-link">
                 <a href="#" class="nav-list-text">Контакти</a>
-                <div class="header-stick-contacts"></div>
+                <!-- <div class="header-stick-contacts"></div> -->
               </li>
             </ul>
            </div>
@@ -117,32 +117,31 @@
           <h2 class="work-title">Чим ми займаємося</h2>
           <ul class="work-photo-img">
             <li class="li-img">
-              <div class="div-pictures">
-              <img src="./images/doing-2.jpg" alt="picture" class="photo-do"/>
-              <div class="image-text">
-                <p class="text">Десктопні додатки</p>
+                <div class="overlay">
+                  <img src="./images/doing-2.jpg" alt="picture" class="photo-do"/>
+              <div class="hidden">
+                  <p class="hidden-p">Десктопні додатки</p>
               </div>
             </div>
           </li>
             <li class="li-img">
-              <div class="div-pictures">
-              <img src="./images/doing-3.jpg" alt="picture" class="photo-do"/>
-              <div class="image-text">
-                <p class="text">Мобільні додатки</p>
-              </div>
+              <div class="overlay">
+                <img src="./images/doing-3.jpg" alt="picture" class="photo-do"/>
+            <div class="hidden">
+                <p class="hidden-p">Мобільні додатки</p>
             </div>
+          </div>
           </li>
             <li class="li-img">
-              <div class="div-pictures">
-              <img src="./images/doing-1.jpg" alt="picture" class="photo-do"/>
-              <div class="image-text">
-                <p class="text">Дизайнерські рішення</p>
-              </div>
+              <div class="overlay">
+                <img src="./images/doing-1.jpg" alt="picture" class="photo-do"/>
+            <div class="hidden">
+                <p class="hidden-p">Дизайнерські рішення</p>
             </div>
+          </div>
           </li>
           </ul>
         </section>
-  
         
         <section class="section-team">
           <h2 class="our-team">Наша команда</h2>
@@ -430,8 +429,8 @@
       /* ------------------------ВСПЛИВАЮЧЕ ВІКНО -----------------*/
       /* ------------------------ВСПЛИВАЮЧЕ ВІКНО -----------------*/ -->
         <!-- <button class="btn-open" data-modal-open>vidrite mod vikno</button> -->
-    <div class="backdrop is-hidden">
-      <form action="" class="modal">
+    <div class="backdrop is-hidden is-visible">
+      <form class="modal is-hidden is-visible">
         <button class="button-close" type="button" data-modal-close>
           <svg class="svg-close-btn">
             <use href="./images/Icons/symbol-defs.svg#icon-close"></use>
@@ -465,8 +464,7 @@
           </li>
           <li class="modal-li">
             <label for="modal-label"> <p class="modal-p">Коментар</p>
-              <textarea cols="30" rows="10" class="modal-textarea">
-              </textarea>
+              <textarea cols="30" rows="10" class="modal-textarea" placeholder="Введіть текст"></textarea>
             </label>
           </li>
         </ul>
@@ -477,6 +475,10 @@
       </form>
     </div>
     <script src="./js/modal.js"></script>
+
+    <!-- /* ------------------------ВСПЛИВАЮЧЕ ВІКНО -----------------*/
+      /* ------------------------ВСПЛИВАЮЧЕ ВІКНО -----------------*/
+      /* ------------------------ВСПЛИВАЮЧЕ ВІКНО -----------------*/ -->
       </footer>
     </div>
   </body>
